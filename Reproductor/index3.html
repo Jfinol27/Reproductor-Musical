@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./diseño.css" />
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <title>Reproductor de Musica</title>
+</head>
+<body onload="getList()">
+    <div class="player">
+
+     <div class="detalles">
+        <label>Esta sonando: </label>
+        <label id="ltitulo">
+            Titulo: <span class="titulo"> </span>
+        </label>
+        <label id="lartista">
+            Artista: <span class="artista"> </span>
+        </label>
+        <label id="lfecha">
+            Fecha: <span class="fecha"></span>
+        </label>
+        <label id="lfoto">
+        <span class="foto"></span>
+        </label>
+     </div>
+
+        <table class="_opciones">
+            <thead>
+                <tr>
+                    <td> Cancion: </td>
+                    <td> Escuchar:</td>
+                </tr>
+            </thead>
+            <tbody class="tbody"></tbody>
+
+        <div class="buttons">
+ 
+        <button type="button" id="prevbutton">Previous</button>
+
+            <audio id="audioPlayer" controls></audio>
+
+        <button type="button" id="nextbutton">Next</button>
+        
+        <button type="button" id="repeatButton">Repeat</button>
+            </div>
+        </table>
+
+        <div class="comentario">
+            <h2>Comments</h2>
+            <form>
+              <label for="user">User:</label>
+              <input type="text" id="name" name="name" required>
+      
+              <label for="comentario">Comentario:</label>
+              <textarea id="comment" name="comment" required></textarea>
+      
+              <button type="enviar">Enviar</button>
+            </form>
+      
+            <div class="historial">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="./JavaScript.js"></script>
+</body>
+</html>
